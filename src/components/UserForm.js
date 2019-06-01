@@ -2,10 +2,7 @@ import React from "react";
 import FormUserDetails from "./FormUserDetails";
 
 class UserForm extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
+    state = {
       step: 1,
       firstName: " ",
       lastName: " ",
@@ -33,7 +30,7 @@ class UserForm extends React.Component {
 
     //handlefieldschange
     handleChange = input => e => {
-      this.setState ({input: e.target.value})
+      this.setState ({[input]: e.target.value});
     }
 
     render() {
@@ -49,7 +46,7 @@ class UserForm extends React.Component {
             handleChange={this.handleChange}
             values={values}
             />
-            )
+          );
         case 2:
           return <h1>FormPersonalDetails</h1>
         case 3:
@@ -58,7 +55,6 @@ class UserForm extends React.Component {
           return <h2>Success!</h2>
       }
     }
-  }
 }
 
 export default UserForm;

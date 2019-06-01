@@ -1,7 +1,9 @@
-import React from "react";
+// import React from "react";
 
-const FormPersonalDetails {
-  return ();
-}
+// const FormPersonalDetails {
+//   return (
+        
+//   );
+// }
 
-export default FormPersonalDetails;
+// export default FormPersonalDetails;

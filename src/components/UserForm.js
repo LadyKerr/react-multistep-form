@@ -48,11 +48,11 @@ class UserForm extends React.Component {
             />
           );
         case 2:
-          return <h1>FormPersonalDetails</h1>
+          return <h1>FormPersonalDetails</h1>;
         case 3:
-          return <h2>Confirm</h2>
+          return <h2>Confirm</h2>;
         case 4:
-          return <h2>Success!</h2>
+          return <h2>Success!</h2>;
       }
     }
 }

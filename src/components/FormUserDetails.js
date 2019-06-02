@@ -11,7 +11,7 @@ class FormUserDetails extends React.Component {
   }
 
     render() {
-      const { values } = this.props;
+      const { values, handleChange } = this.props;
       return (
         <MuiThemeProvider>
           <React.Fragment>
@@ -19,21 +19,21 @@ class FormUserDetails extends React.Component {
             <TextField 
             hintText="Enter Your First Name"
             floatingLabelText="First Name"
-            onChange={this.props.handleChange('firstName')}
+            onChange={handleChange('firstName')}
             defaultValue={values.firstName}
             />
             <br/>
             <TextField 
             hintText="Enter Your Last Name"
             floatingLabelText="Last Name"
-            onChange={this.props.handleChange('lastName')}
+            onChange={handleChange('lastName')}
             defaultValue={values.lastName}
             />
             <br/>
             <TextField 
-            hintText="Enter Your email"
+            hintText="Enter Your Email"
             floatingLabelText="Email"
-            onChange={this.props.handleChange('email')}
+            onChange={handleChange('email')}
             defaultValue={values.email}
             />
             <br/>
@@ -41,7 +41,7 @@ class FormUserDetails extends React.Component {
             label="Continue"
             primary={true}
             styles={styles.button}
-            onCLick={this.continue}
+            onClick={this.continue}
             />
             <br/>
           </React.Fragment>
